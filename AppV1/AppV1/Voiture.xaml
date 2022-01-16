@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppV1.Voiture"
+               >
+    <AbsoluteLayout>
+            <CarouselView
+            x:Name="Carousel"
+            AbsoluteLayout.LayoutFlags="All"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            IndicatorView="indicatorview">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <AbsoluteLayout>
+                        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.3,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" HorizontalOptions="Center">
+                            <Image HeightRequest="270" WidthRequest="500" Source="{Binding .}" VerticalOptions="Center" />
+                            </StackLayout>
+                        </AbsoluteLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        <IndicatorView x:Name="indicatorview" IndicatorColor="Silver" SelectedIndicatorColor="Black" IndicatorSize="6" AbsoluteLayout.LayoutFlags="PositionProportional"  AbsoluteLayout.LayoutBounds="0.5,1,100,100" />
+    </AbsoluteLayout>
+    </ContentPage>

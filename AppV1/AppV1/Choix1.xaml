@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Laptop"
+             mc:Ignorable="d"  x:Class="AppV1.Choix1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Margin="5">
+
+                <Frame IsClippedToBounds="True" Padding="0" BackgroundColor="White">
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://www.notebookcheck.net/uploads/tx_nbc2/ASUSTUFGamingA15FA506-RTX3000__1__03.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand"  >
+                            <Label Text="ASUS TUF" TextColor="#000" FontSize = "25" />
+                            <Label Text="2,500,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="15 pouces, AMD Ryzen 5, 16ram, 512SSD, GTX1650" FontSize="18"></Label>
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame IsClippedToBounds="True" Padding="0"  BackgroundColor="White">
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://m.media-amazon.com/images/I/61KT+yaBG0L._AC_SL1000_.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical"  Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Lenovo S145" TextColor="#000"  FontSize = "25"/>
+                            <Label Text="1,700,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="15 pouces, core i5, 8ram, 1TO HDD, MX110"  FontSize = "18" />
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="True" Padding="0" BackgroundColor="White" >
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://images-na.ssl-images-amazon.com/images/I/51ZYxjJ38lL.jpg"  HeightRequest="200" />
+                        <StackLayout  Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="MSI GS65" TextColor="#000" FontSize = "25" />
+                            <Label Text="3,000,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="17 pouces, core i7, 16ram, 1TO SSD, RTX3050" FontSize="18">
+                            </Label>
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

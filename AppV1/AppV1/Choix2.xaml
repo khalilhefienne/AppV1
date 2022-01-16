@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+Title="Smartphone"         
+             mc:Ignorable="d"
+             x:Class="AppV1.Choix2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Margin="5">
+
+                <Frame IsClippedToBounds="True" Padding="0" BackgroundColor="White" >
+                
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"  Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://images.samsung.com/my/smartphones/galaxy-s21/buy/s21_family_kv_mo_img.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label  Text="S21 Ultra" TextColor="#000"  FontSize = "25"/>
+                            <Label Text="2,000.000  DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="6.5 inch screen, Exynos cpu, 8ram, 20mpx+64mpx, 5000mAh battery" FontSize = "18"/>
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="Lightgreen"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="True" Padding="0" BackgroundColor="White" >
+
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://phoneaqua.com/products/huawei-y9-Pro-2020.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label  Text="Y9 prime 2020" TextColor="#000"  FontSize = "25"/>
+                            <Label Text="900.000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="6.4 inch screen, kirin710F, 4ram, 16mpx+12mpx, 4000mAh battery " FontSize = "18" />
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame IsClippedToBounds="True" Padding="0"  BackgroundColor="White" >
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness"  Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://www.omarphone.tn/wp-content/uploads/2021/08/xiaomi-redmi-9-2.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Redmi 9" TextColor="#000" FontSize = "25"  />
+                            <Label Text="480,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="6 inch screen, helio G80, 3ram, 8mpx+13mpx, 4000mAh battery" FontSize = "18" />
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

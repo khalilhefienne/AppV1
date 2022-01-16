@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppV1.IsetRades"
+            Title="Iset rades"
+     >
+    <ContentPage>
+        <StackLayout>
+            <Image Source="https://zesttunisia.com//wp-content/uploads/2017/12/Sans-titre-30.png"></Image>
+            <Label Text = " Fondée en 1995, elle contient departement info depuis 2003, departement mecanique,departement civil,departement electrique ">
+            </Label>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

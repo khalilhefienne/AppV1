@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppV1.master"
+             Title="master" BackgroundColor="lightblue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="LAPTOP" Margin="0,15,0,30" Padding="0,0,0,5" FontSize="20" FontFamily="ButtonFont" Grid.Column="1" x:Name="btn1" TextColor="Black" BackgroundColor="LightBlue" Clicked="Btn1Cliked" ></Button>
+            <Button  Text="Smartphone"  Margin="0,15,0,30" Padding="0,0,0,5" FontSize="20"  FontFamily="ButtonFont" Grid.Column="1"  x:Name="btn2" TextColor="Black" BackgroundColor="lightblue" Clicked="Btn2Cliked" ></Button>
+            <Button Text="Accessoire"  Margin="0,15,0,30"  Padding="0,0,0,5" FontSize="20" FontFamily="ButtonFont"  Grid.Column="1" x:Name="btn3" TextColor="Black" BackgroundColor="lightblue" Clicked="Btn3Cliked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

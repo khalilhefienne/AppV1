@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppV1.Welcome_Page">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button  Text="magasin" FontSize="20" Padding="0,0,0,5" Margin="0,15,0,30" BorderWidth="2"  Grid.Column="1" FontFamily="ButtonFont" BackgroundColor="Lightblue" Clicked="Mag" />
+            <Button  Text="Iset"  FontSize="20" Padding="0,0,0,5"   Margin="0,15,0,30" BorderWidth="2" Grid.Column="1"  FontFamily="ButtonFont"  BackgroundColor="LightBlue" Clicked="Iset"></Button>
+            <Button  Text="mes Voitures" FontSize="20"  Padding="0,0,0,5" Margin="0,15,0,30" BorderWidth="2" Grid.Column="1" FontFamily="ButtonFont" BackgroundColor="lightblue" Clicked="Voit"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

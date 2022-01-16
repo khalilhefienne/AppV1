@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppV1.Register" Title="creer compte">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10">
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Entry HorizontalOptions="FillAndExpand" Placeholder="Email" x:Name="email"></Entry>
+                </StackLayout>
+            <StackLayout>
+            <Entry HorizontalOptions="FillAndExpand" Placeholder="mot de passe" x:Name="password"></Entry></StackLayout>
+           <StackLayout> <Entry HorizontalOptions="FillAndExpand" Placeholder="Confirmer mot de passe" x:Name="ConfirmPassword"></Entry></StackLayout>
+       <StackLayout>
+                <Button Text="creer" BackgroundColor="LightBlue" Clicked="register"></Button></StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

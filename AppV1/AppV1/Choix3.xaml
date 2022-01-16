@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Accessoire"
+             x:Class="AppV1.Choix3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Margin="5">
+                <Frame IsClippedToBounds="True" Padding="0"  BackgroundColor="White" >
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://www.wiki.tn/56138-large_mobi_default/souris-gamer-t-dagger-private-rgb-noir.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Tdagger TGM-106" TextColor="#000" FontSize = "25" />
+                            <Label Text="20,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="Souris Laser RGB,900dpi up to 3200dpi, 5 boutons" FontSize = "18"/>
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="Lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame IsClippedToBounds="True"  Padding="0"  BackgroundColor="White" >
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10"  iOS="10"/>
+                    </Frame.Margin>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://www.tunisianet.com.tn/149790-large/casque-micro-sans-fil-bluetooth-450bt-noir.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Casque 450BT" TextColor="#000" FontSize = "25" />
+                            <Label Text="30,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="Casque Bluetooth 5.0, Micro Integre, Distance Max 10m, Autonomie 4H" FontSize="18"/>         
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame IsClippedToBounds="True"
+                HasShadow="True"
+                Padding="0"
+                BackgroundColor="White" >
+                    <Frame.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" Android="10"  iOS="10"/>
+                    </Frame.Margin>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Image  Source="https://www.scoopgaming.com.tn/12411-large_default/tapis-souris-gaming-xtrfy-gp2-xxl.jpg"  HeightRequest="200" />
+                        <StackLayout Orientation="Vertical" Padding="15" HorizontalOptions="FillAndExpand" >
+                            <Label Text="Tapis Souris" TextColor="#000" FontSize = "25" />
+                            <Label Text="10,000 DT" TextColor="Red" FontSize="20"/>
+                            <Label Text="Tapis en tissu et plastique pour souris gamer" FontSize="18"/>
+                            <Button Margin="0,25,0,0" Text="Acheter" Background="Lightgreen"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
